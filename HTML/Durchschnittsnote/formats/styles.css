@@ -1,0 +1,21 @@
+body {
+    background-color: #D6D6D6;
+    color: #000000;
+    font-family: Verdana, Calibri, Tahoma;
+}
+form {
+    margin: 3em;
+    border-width: 3px;
+    border-style: solid;
+    border-color: gray;
+    padding: 2em;
+}
+div {
+    margin-top: 1em;
+}
+button {
+    font-size: 1em;
+}
+output {
+    font-weight: bold;
+}

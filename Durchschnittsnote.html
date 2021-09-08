@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Avidery" />   
+    <meta charset="utf-8"/>
+    <meta name="copyright" content="Avidery" />
+    <title> Durchschnittsnote </title>
+    <link rel="stylesheet" href="HTML/Durchschnittsnote/formats/styles.css">
+    <script defer type="text/javascript" src="HTML/Durchschnittsnote/scripts/dnoten.js"></script>
+</head>
+<body>
+    <div id = "formular">  
+        <h1>Durchschnittsnotenberechnung</h1>
+        <br>
+        <div>
+            <label for="Name"> Name:</label>    
+            <input type="text" name="Name" id="NameFeld">
+        </div>
+        <div>
+            <label for="Deutsch"> Deutsch:</label> 
+            <input type="number" name="Deutsch" id="note1">
+        </div>
+        <div>
+            <label for="Mathe">
+                Mathe:
+            </label>
+            <input type="number" name="Mathe" id="note2">
+        </div>
+        <div>
+            <label for="Englisch">Englisch:</label>
+            <input type="number" name="Englisch" id="note3">
+        </div>
+         <div>
+            <label for="Informatik">Informatik: </label>
+            <input type="number" name="Informatik" id="note4">
+         </div>
+         <button name="Button" id="button1" onclick="durchschnittsberechnung()"> Berechnen </button>
+        <p>Result : </p><output id = Durchschnitt></output>
+    </div>
+</body>
+
+</html>
