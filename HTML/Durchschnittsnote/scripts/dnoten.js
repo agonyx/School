@@ -1,16 +1,20 @@
-function durchschnittsberechnung1() {
-    let note1 = document.getElementById("note1").value;
-    let note2 = document.getElementById("note2").value;
-    let note3 = document.getElementById("note3").value;
-    let note4 = document.getElementById("note4").value;
-    return (note1 + note2 + note3 + note4) / 4;
-}
 function durchschnittsberechnung() {
-    var out;
-    var sout;
-    for (let index = 0; index < document.querySelectorAll("input[type=number]").length; index++) {
-        out++;
-        sout += parseFloat(document.querySelector("input[type=number]").value
+    var tem = 0;
+    var alle = document.querySelectorAll("input[type=number]");
+    if(alle.length === 4 ) {
+    for (let index = 0; index < alle.length; index++) {
+        var parsed = parseFloat(alle.item(index).value); 
+        if(Number.isNaN(parsed)){
+            document.getElementById("Durchschnitt").value = "FEHLER" ;
+            throw "Fehler";
+        } else {
+        tem =tem + parsed;  
+        }
     }
-    return sout / out;
+    var ergebnis = tem / alle.length;
+        document.getElementById("Durchschnitt").value = ergebnis; 
+} else {
+    document.getElementById("Durchschnitt").value = "FEHLER" ; 
+    throw "Fehler";
+}
 }
