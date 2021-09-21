@@ -1,7 +1,7 @@
 function durchschnittsberechnung() {
     var tem = 0;
     var alle = document.querySelectorAll("input[type=number]");
-    if(alle.length === 4 ) {
+    if(alle.length === 4) {
     for (let index = 0; index < alle.length; index++) {
         var parsed = parseFloat(alle.item(index).value); 
         if(Number.isNaN(parsed)){
