@@ -10,34 +10,36 @@
     <script defer type="text/javascript" src="../scripts/dnoten.js"></script>
 </head>
 <body>
-    <div id = "formular">  
+    <form id = "formular">  
         <h1>Durchschnittsnotenberechnung</h1>
         <br>
         <div>
-            <label for="Name"> Name:</label>    
+            <label for="NameFeld"> Name:</label>    
             <input type="text" name="Name" id="NameFeld">
         </div>
         <div>
-            <label for="Deutsch"> Deutsch:</label> 
+            <label for="note1"> Deutsch:</label> 
             <input type="number" name="Deutsch" id="note1">
         </div>
         <div>
-            <label for="Mathe">
+            <label for="note2">
                 Mathe:
             </label>
             <input type="number" name="Mathe" id="note2">
         </div>
         <div>
-            <label for="Englisch">Englisch:</label>
+            <label for="note3">Englisch:</label>
             <input type="number" name="Englisch" id="note3">
         </div>
          <div>
-            <label for="Informatik">Informatik: </label>
+            <label for="note4">Informatik: </label>
             <input type="number" name="Informatik" id="note4">
          </div>
-         <button name="Button" id="button1" onclick="durchschnittsberechnung()"> Berechnen </button>
-        <p>Result : </p><output id = Durchschnitt></output>
-    </div>
+         <div>
+            <button name="Button" id="button1" onclick="durchschnittsberechnung()"> Berechnen </button>    
+         </div>
+                 <p>Result : </p><output id = Durchschnitt></output>
+    </form3>
 </body>
 
 </html>

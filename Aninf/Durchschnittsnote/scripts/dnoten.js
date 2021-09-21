@@ -8,12 +8,17 @@ function durchschnittsberechnung() {
             document.getElementById("Durchschnitt").value = "FEHLER" ;
             throw "Fehler";
         } else {
-        tem =tem + parsed;  
+            if(parsed <= 6 & parsed> 0) {
+                tem =tem + parsed; 
+            } else{
+                document.getElementById("Durchschnitt").value = "FEHLER: Noten können nicht größer als 6 oder kleiner als 1 sein" ; 
+                throw "Fehler";
+            }
         }
     }
     var ergebnis = tem / alle.length;
         document.getElementById("Durchschnitt").value = ergebnis; 
-} else {
+    } else {
     document.getElementById("Durchschnitt").value = "FEHLER" ; 
     throw "Fehler";
 }
